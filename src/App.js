@@ -1,17 +1,18 @@
 import React, { Fragment } from 'react';
 import GlobalStyle from './styles/global';
-import { ContainerSt, HeadingSt } from './App.css';
+import Stories from './app/views/stories/Stories/Stories';
+import ContainerSt from './App.css';
+
+const stories = [
+  { author: 'Matt Finucane', id: 1, title: 'Chapter One' },
+  { author: 'Leah Wilby', id: 2, title: 'Chapter Two' }
+];
 
 export default function App() {
   return (
     <Fragment>
       <ContainerSt>
-        <HeadingSt>
-          This is the sandbox
-        </HeadingSt>
-        <p>
-          This is some text
-        </p>
+        <Stories stories={stories} />
       </ContainerSt>
       <GlobalStyle />
     </Fragment>

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src/** && stylelint './src/styles/**' './src/**/*.css.js'",
-    "start": "webpack-dev-server --mode development",
+    "client-dev": "webpack-dev-server --mode development",
+    "apollo": "node ./src/server/graphql/index.js",
+    "start": "yarn client-dev && yarn apollo",
     "test": "jest"
   },
   "author": "Matt Finucane",
@@ -15,8 +17,11 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "apollo-server": "^2.5.0",
     "babel-loader": "^8.0.5",
+    "graphql": "^14.3.0",
     "jest": "^24.8.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0",

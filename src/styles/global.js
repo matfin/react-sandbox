@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${fonts.md};
   }
 
-  h1, h2, h3, h4, h5, h6, ul, li, a, p {
+  h1, h2, h3, h4, h5, h6, ul, ol, li, a, p {
     padding: 0;
     margin: 0;
   }
