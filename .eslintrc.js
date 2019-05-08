@@ -21,6 +21,7 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': 0,
+    'prefer-default-export': 0,
     'react/jsx-filename-extension': 0
   }
 };

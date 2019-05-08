@@ -1,20 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  background-color: #ccc;
-`;
-
-const Heading = styled.h1`
-  font-size: 2rem;
-`;
+import React, { Fragment } from 'react';
+import GlobalStyle from './styles/global';
+import { ContainerSt, HeadingSt } from './App.css';
 
 export default function App() {
   return (
-    <Container>
-      <Heading>
-        This is the sandbox
-      </Heading>
-    </Container>
+    <Fragment>
+      <ContainerSt>
+        <HeadingSt>
+          This is the sandbox
+        </HeadingSt>
+        <p>
+          This is some text
+        </p>
+      </ContainerSt>
+      <GlobalStyle />
+    </Fragment>
   );
 }
