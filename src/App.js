@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import styled from 'styled-components';
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <h1>
-          This is the Sandbox
-        </h1>
-      </div>
-    );
-  }
-};
+const Container = styled.div`
+  background-color: #ccc;
+`;
+
+const Heading = styled.h1`
+  font-size: 2rem;
+`;
+
+export default function App() {
+  return (
+    <Container>
+      <Heading>
+        This is the sandbox
+      </Heading>
+    </Container>
+  );
+}
